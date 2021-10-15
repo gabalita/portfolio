@@ -15,23 +15,25 @@
 
 <body>
   <!-- Adding navigation links -->
-  <nav class="navbar navbar-custom">
-    <a class="navbar-brand navbar-custom" href="index.html">Home</a>
-    <a class="navbar-brand navbar-custom" href="about.html">About</a>
-    <a class="navbar-brand navbar-custom" href="projects.html">Projects</a>
+  <nav class="nav flex-sm-column">
+    <!-- <a class="navbar-brand navbar-custom" href="index.html">Home</a> -->
+    <a class="nav-custom" href="#about">About</a>
+    <a class="nav-custom" href="#work">Work</a>
+    <a class="nav-custom" href="#projects">Projects</a>
+    <a class="nav-custom" href="#GW">GW</a>
+    <a class="nav-custom" href="#contact">Contact</a>
   </nav>
-
 
   <!-- First homepage section -->
   <header>
-    <div class='container'>
+    <div class='container' id='top-of-page'>
       <div class="row">
         <div class='col-md-8'>
           <h1 class='slideIn'>Welcome to My Portfolio Page</h1>
         </div>
       </div>
 
-      <div class='row'>
+      <div class='row' id='about'>
           <div class='col-md-12'>
               <br>
               <p>My name is Gabriella Chen. I am a customer service manager seeking roles in <strong>Data Analysis</strong> or
@@ -39,14 +41,14 @@
             I am <strong>enrolled in a Data Analytics and Visualization bootcamp</strong> at the George Washington University (June 2021 - December 2021). </p>
       
               <p>After college, I worked at McMaster Carr Supply Company for two and a half years. I left the company in January 2020
-                (right before the Pandemic!) to embark on a new adventure. In this website, I will walk you through my journey -- 
-                personal and professional -- as well as some of my recent projects.</p>
+                (right before the Pandemic!) to embark on a new adventure. During that time, I volunteered for All Hands and Hearts, tutored a learning pod 
+              of four 6th girls, taught tennis, and started my bootcamp where I learned to code. This website is an exhibit of some of my projects. </p>
           </div>
       </div>
 
       <div class='row'>
         <div class="col-md-6">
-          <img src="images/me1.jpeg" alt="homepage photo"
+          <img src="images/me2.png" alt="homepage photo"
           style="width: 45vw; min-width: 330px;"/> 
           <p style="font-family:courier; font-size: 14px;"> In August 2021, I visited Peaks Island, ME for a week. </p>
         </div>
@@ -68,7 +70,7 @@
   </header>
 
   <!-- Second section -->
-  <section class='accent-bg'>
+  <section class='accent-bg' id='work'>
     <div class='container'>
       <div class='row'>
         <div class='col-md-12'>
@@ -105,26 +107,27 @@
         <center><p style="font-family:courier; font-size: 16px;"> The host of Myth Busters, Adam Savage, 
           holds up McMaster's annual mighty catalog.</p></center>
           <br>
-          <a href='index.html' class='btn'> Return to the top. </a>
       </div>
     </div>
   </section>
 
 <!-- Third section -->
 <section class='body'>
-  <div class="container">
+  <div class="container" id='projects'>
     <div class='row'>
       <div class='col-md-12'>
-        <h2 class='slideIn'> Projects </h2>
-        <h3 class='slideIn'>Personal Projects:</h3>
-        <h3>Fluenteam Language Platform</h3>
+        <h2 class='slideIn'> Personal Projects </h2>
+        <h3 class='slideIn'>Fluenteam Language Platform:</h3>
+        <a href="https://www.fluenteam.com/"><h4>www.Fluenteam.com</h4></a>
+        <h4>Feb 2021 - May 2021</h4>
       </div>
     </div>
 
     <div class="row">
       <div class='col-md-6'>
-        <h4>Feb 2021 - May 2021</h4>
+        
         <a href="https://www.fluenteam.com/"><center><img src="images/fluenteam.png" alt="fluenteam photo"></center></a>
+        
       </div>
 
       <div class='col-md-6'>
@@ -146,10 +149,10 @@
     <br>
     <div class='row'>
       <div class='col-md-12'>
-        <h3>Outside Indie: Music Blog</h3>
+        <h3 class='slideIn'>Outside Indie: Music Blog</h3>
+        <a href="https://www.OutsideIndie.com/"><h4>www.OutsideIndie.com</h4></a>
         <h4>April 2020 - Present </h4>
       </div>
-    <br>
   </div>
 
     <div class="row">
@@ -171,7 +174,7 @@
 
 <!-- Fourth Section: Portfolio Class Work -->
 <section>
-  <div class="container">
+  <div class="container" id='GW'>
     <div class="row">
       <h2 class='slideIn'>GW Bootcamp Projects</h2>
       <h4>June 17, 2021 - December 2, 2021</h4>
@@ -243,7 +246,33 @@
 </section>
 
 
+
 <script src='main.js'></script>
+
+<section>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-12'>
+        <h1> Contact </h1>
+        <a href="mailto:gabalita@gmail.com"><h2> Email me! </h2></a>
+        <a href='https://github.com/gabalita'> <h2> My Github Profile </h2></a>
+        <a href='https://www.linkedin.com/in/gabriella-chen-ba5838a6/'> <h2> LinkedIn</h2> </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id='contact'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-12'>
+        <a href='#top-of-page' class='btn'> Return to the top. </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 </body>
 </html>
